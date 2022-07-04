@@ -13,10 +13,17 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+let sum = 0
+  function sumOfNumbers(arrayOfNumbers) {
+    for (let i = 0; i < arrayOfNumbers.length; i++) {
+        sum += arrayOfNumbers[i];
+    }
+    // return arrayOfNumbers.length;
+    return sum;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+
+
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -27,10 +34,19 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
+
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+let count = 0
+    for (let i = 0; i < arrayOfNumbers.length; i++) {
+        if (arrayOfNumbers[i] % 2 === 0) {
+      count++
+        }
+          
+    }
+    return count 
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
@@ -46,9 +62,20 @@ function countEvenNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
  * @returns Array the converted temperatures in Fahrenheit
  */
-function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
-}
+// function celsiusToFahrenheit(arrayOfNumbers) {
+//    const createFahrenheit = arrayOfNumbers.map((number) => Math.trunc(number * (9/5) + 32));
+//     return createFahrenheit;
+ 
+// }
+// function celsiusToFahrenheit(arrayOfNumbers) {
+//     let farenheitValue = []
+//     for (let i = 0; i < arrayOfNumbers.length; i++) {
+//         // const number = Math.trunc(i * 9 / 5 + 32)
+//         farenheitValue.push(Math.trunc(i * 9 / 5 + 32))
+//         // farenheitValue.push()
+// }
+//     return farenheitValue;
+// }
 // assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 
